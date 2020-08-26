@@ -30,6 +30,4 @@ export class GoalDetailComponent implements OnInit {
     // this.goal = this.service.getGoal(id)
   }
 
-  
-
 }
