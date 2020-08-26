@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Diary": {
+    "Goals": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Diary",
+            "outputPath": "dist/Goals",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Diary:build"
+            "browserTarget": "Goals:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Diary:build:production"
+              "browserTarget": "Goals:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Diary:build"
+            "browserTarget": "Goals:build"
           }
         },
         "test": {
@@ -110,15 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Diary:serve"
+            "devServerTarget": "Goals:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Diary:serve:production"
+              "devServerTarget": "Goals:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "Diary"
+    }
+  },
+  "defaultProject": "Goals",
+  "cli": {
+    "analytics": "ba664890-0066-492d-9181-c61d59db8a2d"
+  }
 }
